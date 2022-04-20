@@ -5,11 +5,11 @@
 	// Check For Submit
 	if(isset($_POST['submit'])){
 		// Get form data
-		$lname = mysqli_real_escape_string($conn,$_POST['lname']);
-		$fname = mysqli_real_escape_string($conn,$_POST['fname']);
+		$lastname = mysqli_real_escape_string($conn,$_POST['lastname']);
+		$firstname = mysqli_real_escape_string($conn,$_POST['firstname']);
 		$address = mysqli_real_escape_string($conn,$_POST['address']);
 
-		$query = "INSERT INTO person(lastname, firstname,address,logdt) VALUES('$lname', '$fname', '$address', now())";
+		$query = "INSERT INTO person(lastname, firstname,address,logdt) VALUES('$lastname', '$firstname', '$address', now())";
 
 		if(mysqli_query($conn, $query)){
       header('Location: '.ROOT_URL.'');
