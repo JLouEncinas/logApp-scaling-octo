@@ -28,13 +28,13 @@
   <form method="POST" action="<?php $_SERVER['PHP_SELF']; ?>" class="was-validated">
     <div class="form-group">
       <label for="uname">Last name:</label>
-      <input type="text" class="form-control" id="lname" placeholder="Enter last name" name="lname" required>
+      <input type="text" class="form-control" id="lname" placeholder="Enter last name" name="lastname" required>
       <div class="valid-feedback">Valid.</div>
       <div class="invalid-feedback">Please fill out this field.</div>
     </div>
     <div class="form-group">
       <label for="uname">First name:</label>
-      <input type="text" class="form-control" id="fname" placeholder="Enter first name" name="fname" required>
+      <input type="text" class="form-control" id="fname" placeholder="Enter first name" name="firstname" required>
       <div class="valid-feedback">Valid.</div>
       <div class="invalid-feedback">Please fill out this field.</div>
     </div>
